@@ -23,8 +23,8 @@
     "aws-sdk": "^2.828.0"
   },
   "scripts": {
-    "tailwind": "npx tailwind build ./assets/tailwind.css -o ./assets/css/main.css -c _tailwind.config.js",
-    "tailwind-dist": "export NODE_ENV=production && npx tailwind build ./assets/tailwind.css -o ./dist/assets/css/main.css -c _tailwind.config.js",
+    "tailwind": "npx tailwind build ./assets/tailwind.css -o ./assets/css/main.css -c tailwind.config.js",
+    "tailwind-dist": "export NODE_ENV=production && npx tailwind build ./assets/tailwind.css -o ./dist/assets/css/main.css -c tailwind.config.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "node build.js"
