@@ -64,6 +64,6 @@ function register_ejs_paths(dir) {
         let p = file_path.replace('views', '').replace('.ejs', '')
 
         console.log(`[${(new Date()).toISOString()}] Registering path ${p}`)
-        app.get(p, (req, res) => res.render('index', {}) );
+        app.get(p, (req, res) => res.render(p.replace(/^\/+|\/+$/g, ''), {}) );
     })
 }
